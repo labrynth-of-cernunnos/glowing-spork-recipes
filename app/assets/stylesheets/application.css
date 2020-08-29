@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ @import "bulma";
+
+ .hero.is-primary{
+	background-color: #750000;
+}
+.main{
+	background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(102, 102, 102, 0.5)), url('spork.png');
+}
