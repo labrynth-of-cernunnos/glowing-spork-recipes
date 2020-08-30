@@ -12,16 +12,51 @@
   <body>
     <section class="hero is-primary">
       <div class="hero-body">
-        <div class="container">
-          <h1 class="title is-1">Glowing Spork Recipes</h1>
+        <div class="block">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item logo" href="#">
+               <%= image_tag "spork.png" %>
+               <h1 class="title is-3"> &nbsp; Glowing Spork Recipes </h1>
+              </a>
+              <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="navbar-menu">
+              <div class="navbar-start">
+                <a href="#" class="navbar-item">My Recipes</a>
+                <a href="#" class="navbar-item">Top Rated</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                  <a class="navbar-link">Catagories</a>
+                  <div class="navbar-dropdown">
+                    <a class="navbar-item">Thai</a>
+                    <a class="navbar-item">Vietnamese</a>
+                    <a class="navbar-item">Mexican</a>
+                  </div>
+                </div>
+              </div>
+
+  <!-- # login or search -->
+              <!-- <a href="#" class="navbar-item">Search</a> -->
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a class="button is-light"> Sign up </a>
+                    <a class="button is-light"> Log in </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </section>
     <section class="main">
-
-
-
       <%= yield %>
     </section>
   </body>
 </html>
+
