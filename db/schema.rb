@@ -13,13 +13,6 @@
 ActiveRecord::Schema.define(version: 20200830163015) do
 
   create_table "recipes", force: :cascade do |t|
-    t.string "title"
-    t.decimal "rating"
-    t.text "description"
-    t.text "instructions"
-  end
-
-  create_table "recipies", force: :cascade do |t|
     t.string "photo"
     t.string "title"
     t.string "author"

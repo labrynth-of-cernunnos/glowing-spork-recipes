@@ -44,5 +44,7 @@
 	background: #a30000;
 	border: 1px soilid black;
 }
-
+.container .card .content{
+	color: black;
+}
 

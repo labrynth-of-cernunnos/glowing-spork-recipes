@@ -1,30 +1,32 @@
 <div class="container">
 	<div class="columns">
 	  <div class="column">
-			<% @recipies.each_slice(4) do |group| %> 
+			<% @recipes.each_slice(4) do |group| %> 
 				<div class="columns">
-					<% group.each do |recipie| %>	
+					<% group.each do |recipe| %>	
 						<div class="column">
 							<div class="card">
-								<div class="card-image">
-									<figure class="image is-4by3">
-										<%= image_tag "#{recipie_image(recipie)}" %>
-									</figure>
-								</div>
-								<div class="card-content">
-									<div class="media">
-										<div class="media-content">
-											<p class="title is-4"><%= recipie.title %></p>
-											<p class="subtitle is-6"><%= author_name(recipie) %></p>
+							  <a href="/recipes/<%= recipe.id %>" alt="<%= recipe.title %>" class="card_wrapper">
+									<div class="card-image">
+										<figure class="image is-4by3">
+											<%= image_tag "#{recipe_image(recipe)}" %>
+										</figure>
+									</div>
+									<div class="card-content">
+										<div class="media">
+											<div class="media-content">
+												<p class="title is-4"><%= recipe.title %></p>
+												<p class="subtitle is-6"><%= author_name(recipe) %></p>
+											</div>
+										</div>
+										<div class="content">
+											<%= short_description(recipe) %>
+											<br>
+											<br>
+											<time datetime="<%= datetime_machine(recipe) %>"><%= created_on(recipe) %></time>
 										</div>
 									</div>
-									<div class="content">
-										<%= short_description(recipie) %>
-										<br>
-										<br>
-										<time datetime="<%= datetime_machine(recipie) %>"><%= created_on(recipie) %></time>
-									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					<% end %>

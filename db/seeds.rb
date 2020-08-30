@@ -1,5 +1,5 @@
 
-Recipie.create(
+Recipe.create(
   photo: 'brownies.jpg',
   title: 'brownies',
   author: nil, 
@@ -7,7 +7,7 @@ Recipie.create(
   rating: 5
 )
 
-Recipie.create(
+Recipe.create(
   photo: 'pizza.jpg',
   title: 'Margaharita Pizza',
   author: "Shannon L", 
@@ -15,7 +15,7 @@ Recipie.create(
   rating: 4
 )
 
-Recipie.create(
+Recipe.create(
   photo: 'pad-thai.jpg',
   title: 'Pad Thai',
   author: "Shelly L",  
@@ -23,7 +23,7 @@ Recipie.create(
   rating: 3
 )
 
-Recipie.create(
+Recipe.create(
   photo: 'butter-chicken.jpg',
   title: 'Butter Chicken',
   author: "Sam K",
@@ -31,7 +31,7 @@ Recipie.create(
   rating: 4
 )
 
-Recipie.create(
+Recipe.create(
   photo: 'ramen.jpg',
   title: 'Ramen',
   author: 'Lee M',  
@@ -39,7 +39,7 @@ Recipie.create(
   rating: 5
 )
 
-Recipie.create(
+Recipe.create(
   photo: 'sushi-rice.jpg',
   title: 'Sushi Rice',
   author: 'Shen Z',
@@ -47,7 +47,7 @@ Recipie.create(
   rating: 4
 )
 
-Recipie.create(
+Recipe.create(
   photo: 'fish-tacos.jpg',
   title: 'Fish Tacos',
   author: 'Miguel H',  
@@ -55,7 +55,7 @@ Recipie.create(
   rating: 4
 )
 
-Recipie.create(
+Recipe.create(
   photo: 'spring-rolls.jpg',
   title: 'Fresh Spring Rolls',
   author: 'Sue L',  
@@ -63,7 +63,7 @@ Recipie.create(
   rating: 5
 )
 
-Recipie.create(
+Recipe.create(
   photo: 'bimbap.jpg',
   title: 'Bimbap',
   author: 'Charles Q', 
