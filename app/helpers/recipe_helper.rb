@@ -1,5 +1,5 @@
 module RecipeHelper
-	def	recipie_image(recipe)
+	def	recipe_image(recipe)
 		recipe.photo.present? ? recipe.photo : "spork.png"
 	end
 
