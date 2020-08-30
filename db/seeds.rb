@@ -1,17 +1,73 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-Recipie.create(title: 'brownies', rating: 10, description: "My perfect brownie is thick, fudgy, chewy, and chocolaty with a slight hint of gooey goodness. It also has that tissue-thin crinkly crust on top and just melts in your mouth.", instructions:"Preheat oven to 350 degrees F (175 degrees C). Grease and flour an 8-inch square pan.\nIn a large saucepan, melt 1/2 cup butter. Remove from heat, and stir in sugar, eggs, and 1 teaspoon vanilla. Beat in 1/3 cup cocoa, 1/2 cup flour, salt, and baking powder. Spread batter into prepared pan.\nBake in preheated oven for 25 to 30 minutes. Do not overcook.\nTo Make Frosting: Combine 3 tablespoons softened butter, 3 tablespoons cocoa, honey, 1 teaspoon vanilla extract, and 1 cup confectioners' sugar. Stir until smooth. Frost brownies while they are still warm.")
 
-Recipie.create(title: 'strawberry rhubarb pie', rating: 10, description: "Duis eget lorem ac ante sodales fringilla. Vivamus accumsan eleifend mauris, id congue est viverra a. Pellentesque nunc ipsum, tincidunt vitae neque quis, lacinia pulvinar neque. Pellentesque id ligula vitae risus dignissim imperdiet. Nam iaculis vitae dui a mollis. Etiam et eleifend velit. Phasellus pharetra, sem vel cursus consectetur, nunc purus faucibus odio, sed vehicula augue risus ac neque. Ut tempor eget mi a vulputate. Aliquam commodo sem et eros imperdiet porta. Duis quis mauris condimentum lorem vulputate tempor.", instructions:"Mauris pharetra metus at risus interdum, nec vehicula justo semper.\n
-Mauris ut arcu ut sem porttitor maximus.\n
-Duis et lacus et ante pretium faucibus sit amet id lacus.\n
-Nulla quis nisi nec tortor hendrerit interdum nec nec velit.\n
-Curabitur fermentum dolor eget lectus volutpat, a faucibus risus mattis.\n")
+Recipie.create(
+  photo: 'brownies.jpg',
+  title: 'brownies',
+  author: nil, 
+  description: "My perfect brownie is thick, fudgy, chewy, and chocolaty with a slight hint of gooey goodness. It also has that tissue-thin crinkly crust on top and just melts in your mouth.",
+  rating: 5
+)
 
-Recipie.create(title: 'brownies', rating: 10, description: "MCurabitur volutpat massa eu molestie tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc consectetur eros ut lacus dapibus tincidunt. Sed semper hendrerit felis vitae pulvinar. Duis hendrerit ex sed eros sagittis feugiat. Aliquam erat volutpat. Ut euismod in sem in sollicitudin. Vestibulum ipsum ex, pretium at sem ac, interdum hendrerit felis. Sed ac diam ullamcorper, gravida nulla eu, dapibus nisi. Mauris ac feugiat nisl. Curabitur non eros eu tellus maximus vehicula non nec turpis. In hac habitasse platea dictumst. Duis sit amet quam et nulla congue feugiat.", instructions:"Pellentesque placerat quam sed augue laoreet convallis.\n
-Aenean non nisi non turpis auctor laoreet.\n
-Nunc ullamcorper leo et elit tincidunt sodales.\n
-Phasellus vestibulum mi in posuere volutpat.\n")
+Recipie.create(
+  photo: 'pizza.jpg',
+  title: 'Margaharita Pizza',
+  author: "Shannon L", 
+  description: "MCurabitur volutpat massa eu molestie tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc consectetur eros ut lacus dapibus tincidunt. Sed semper hendrerit felis vitae pulvinar. Duis hendrerit ex sed eros sagittis feugiat. Aliquam erat volutpat. Ut euismod in sem in sollicitudin. Vestibulum ipsum ex, pretium at sem ac, interdum hendrerit felis. Sed ac diam ullamcorper, gravida nulla eu, dapibus nisi. Mauris ac feugiat nisl. Curabitur non eros eu tellus maximus vehicula non nec turpis. In hac habitasse platea dictumst. Duis sit amet quam et nulla congue feugiat.",
+  rating: 4
+)
+
+Recipie.create(
+  photo: 'pad-thai.jpg',
+  title: 'Pad Thai',
+  author: "Shelly L",  
+  description: "Mauris ut arcu ut sem porttitor maximus. Duis et lacus et ante pretium faucibus sit amet id lacus. Nulla quis nisi nec tortor hendrerit interdum nec nec velit. Curabitur fermentum dolor eget lectus volutpat, a faucibus risus mattis.",
+  rating: 3
+)
+
+Recipie.create(
+  photo: 'butter-chicken.jpg',
+  title: 'Butter Chicken',
+  author: "Sam K",
+  description: "Curabitur fermentum dolor eget lectus volutpat, a faucibus risus mattis.",
+  rating: 4
+)
+
+Recipie.create(
+  photo: 'ramen.jpg',
+  title: 'Ramen',
+  author: 'Lee M',  
+  description: "Easy homemade chicken ramen, with a flavorful broth, roasted chicken, fresh veggies, lots of noodles, and a soft cooked egg. Inspired by traditional Japanese ramen, but on the table in under an hour.",
+  rating: 5
+)
+
+Recipie.create(
+  photo: 'sushi-rice.jpg',
+  title: 'Sushi Rice',
+  author: 'Shen Z',
+  description: "Here is my recipe for the perfect sushi rice. You can eat this alone or roll into your favorite sushi roll with ingredients of choice. I use strips of carrots, cucumbers and slices of avocado. You can adjust the amount of vinegar in this recipe to suit your taste.",
+  rating: 4
+)
+
+Recipie.create(
+  photo: 'fish-tacos.jpg',
+  title: 'Fish Tacos',
+  author: 'Miguel H',  
+  description: "Love fish tacos? Well, these are the end-all be-all. Read on to see what makes these tacos so special.",
+  rating: 4
+)
+
+Recipie.create(
+  photo: 'spring-rolls.jpg',
+  title: 'Fresh Spring Rolls',
+  author: 'Sue L',  
+  description: "These spring rolls are a refreshing change from the usual fried variety, and have become a family favorite. They are great as a cool summertime appetizer, and are delicious dipped in one or both of the sauces.",
+  rating: 5
+)
+
+Recipie.create(
+  photo: 'bimbap.jpg',
+  title: 'Bimbap',
+  author: 'Charles Q', 
+  description: "Bibimbap (비빔밥) is probably one of the most well-known and beloved Korean dishes to many people. Even if people don’t know anything about Korea, it’s not too difficult to find people who had Bibimbap sometime in their lives.",
+  rating: 5
+)
+

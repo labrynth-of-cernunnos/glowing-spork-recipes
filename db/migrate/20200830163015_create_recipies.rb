@@ -5,7 +5,7 @@ class CreateRecipies < ActiveRecord::Migration[5.1]
       t.string :title
       t.string :author
       t.string :description
-      t.fixnum :rating
+      t.integer :rating
 
       t.timestamps
     end

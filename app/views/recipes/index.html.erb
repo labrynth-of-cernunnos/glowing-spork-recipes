@@ -1,100 +1,35 @@
 <div class="container">
 	<div class="columns">
-		<div class="column">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-4by3">
-					  <%= image_tag "#{recipie_image}" %>
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-content">
-							<p class="title is-4">Recipie Title</p>
-							<p class="subtitle is-6">Recipie Author</p>
+	  <div class="column">
+			<% @recipies.each_slice(4) do |group| %> 
+				<div class="columns">
+					<% group.each do |recipie| %>	
+						<div class="column">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<%= image_tag "#{recipie_image(recipie)}" %>
+									</figure>
+								</div>
+								<div class="card-content">
+									<div class="media">
+										<div class="media-content">
+											<p class="title is-4"><%= recipie.title %></p>
+											<p class="subtitle is-6"><%= author_name(recipie) %></p>
+										</div>
+									</div>
+									<div class="content">
+										<%= short_description(recipie) %>
+										<br>
+										<br>
+										<time datetime="<%= datetime_machine(recipie) %>"><%= created_on(recipie) %></time>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus nec iaculis mauris. 
-						<br>
-						<br>
-						<time datetime="2016-1-1">Jan 1 2016</time>
-					</div>
+					<% end %>
 				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-4by3">
-					  <%= image_tag "#{recipie_image}" %>
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-content">
-							<p class="title is-4">Recipie Name</p>
-							<p class="subtitle is-6">Recipie Author</p>
-						</div>
-					</div>
-					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus nec iaculis mauris. 
-						<br>
-						<br>
-						<time datetime="2016-1-1">Jan 1 2016</time>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-4by3">
-					  <%= image_tag "#{recipie_image}" %>
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-content">
-							<p class="title is-4">Recipie Name</p>
-							<p class="subtitle is-6">Recipie Author</p>
-						</div>
-					</div>
-					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus nec iaculis mauris. 
-						<br>
-						<br>
-						<time datetime="2016-1-1">Jan 1 2016</time>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="card">
-				<div class="card-image">
-					<figure class="image is-4by3">
-					  <%= image_tag "#{recipie_image}" %>
-					</figure>
-				</div>
-				<div class="card-content">
-					<div class="media">
-						<div class="media-content">
-							<p class="title is-4">Recipie Name</p>
-							<p class="subtitle is-6">Recipie Author</p>
-						</div>
-					</div>
-					<div class="content">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Phasellus nec iaculis mauris. 
-						<br>
-						<br>
-						<time datetime="2016-1-1">Jan 1 2016</time>
-					</div>
-				</div>
-			</div>
+			<% end %>
 		</div>
 	</div>
 </div>
