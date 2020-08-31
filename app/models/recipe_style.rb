@@ -1,0 +1,3 @@
+class RecipeStyle < ApplicationRecord
+
+end

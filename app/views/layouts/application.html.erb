@@ -30,11 +30,11 @@
                 <a href="#" class="navbar-item">My Recipes</a>
                 <a href="#" class="navbar-item">Top Rated</a>
                 <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link">Catagories</a>
+                  <a class="navbar-link">Styles</a>
                   <div class="navbar-dropdown">
-                    <a class="navbar-item">Thai</a>
-                    <a class="navbar-item">Vietnamese</a>
-                    <a class="navbar-item">Mexican</a>
+                    <% @styles.each do |style| %>
+                      <a class="navbar-item"><%= style.name %></a>
+                    <% end %>
                   </div>
                 </div>
               </div>
