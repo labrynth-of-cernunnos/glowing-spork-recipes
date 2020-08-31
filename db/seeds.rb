@@ -95,3 +95,13 @@ Course.create(name: "Appetisers")
 Course.create(name: "Main")
 Course.create(name: "Dessert")
 Course.create(name: "Snacks")
+
+Restriction.create(name: "Nut Free")
+Restriction.create(name: "Dairy Free")
+Restriction.create(name: "No Added Sugar")
+Restriction.create(name: "Vegan")
+Restriction.create(name: "Gluten Free")
+Restriction.create(name: "Vegetarian")
+Restriction.create(name: "Egg Free")
+Restriction.create(name: "No Shellfish")
+

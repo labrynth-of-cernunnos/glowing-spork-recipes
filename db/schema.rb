@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200831013615) do
+ActiveRecord::Schema.define(version: 20200831134545) do
 
   create_table "courses", force: :cascade do |t|
     t.string "name"
@@ -28,9 +28,18 @@ ActiveRecord::Schema.define(version: 20200831013615) do
     t.index ["course_id"], name: "index_recipes_on_course_id"
   end
 
+  create_table "recipes_restrictions", id: false, force: :cascade do |t|
+    t.integer "recipe_id"
+    t.integer "restriction_id"
+  end
+
   create_table "recipes_styles", id: false, force: :cascade do |t|
     t.integer "recipe_id"
     t.integer "style_id"
+  end
+
+  create_table "restrictions", force: :cascade do |t|
+    t.string "name"
   end
 
   create_table "styles", force: :cascade do |t|
