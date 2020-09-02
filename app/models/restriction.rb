@@ -1,3 +1,4 @@
 class Restriction < ApplicationRecord 
-  has_and_belongs_to_many :recipes
+  has_many :recipes_restrictions
+  has_many :recipes, through: :recipes_restrictions
 end

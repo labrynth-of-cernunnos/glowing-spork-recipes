@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200831134545) do
+ActiveRecord::Schema.define(version: 20200902211352) do
 
   create_table "courses", force: :cascade do |t|
     t.string "name"
@@ -44,6 +44,11 @@ ActiveRecord::Schema.define(version: 20200831134545) do
 
   create_table "styles", force: :cascade do |t|
     t.string "name"
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
+    t.integer "recipe_id"
   end
 
 end
